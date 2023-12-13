@@ -23,6 +23,7 @@ namespace CourseManager
                 new { Id = Guid.Parse("1b61c5e4-50d3-4a49-9d31-8b6d40c72a2e"), Name = "John Doe", teacherId = Guid.Parse("d28888e9-2ba9-473a-a40f-e38cb54f9b35") },
                 new { Id = Guid.Parse("e7e4b2a2-6547-47d0-a04e-0cd3b2678a0f"), Name = "Jane Smith", teacherId = Guid.Parse("da2fd609-d754-4feb-8acd-c4f9ff13ba96") }
             );
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
