@@ -1,5 +1,5 @@
 using AutoMapper;
-using CourseManager.DbContext;
+using CourseManager;
 //using CourseManager.Entities;
 //using CourseManager.Models;
 using Microsoft.AspNetCore.Http.HttpResults;
