@@ -14,7 +14,7 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddProblemDetails();
 
 
-var connection = builder.Configuration["ConnectionStrings:DishesDBConnectionString"];
+var connection = builder.Configuration["CourseManagerDBConnectionString"];
 
 builder.Services.AddDbContext<CourseManagerDbContext>(o => o.UseMySql(
     connection, ServerVersion.AutoDetect(connection)));
